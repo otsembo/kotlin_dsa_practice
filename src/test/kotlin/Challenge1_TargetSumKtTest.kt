@@ -10,6 +10,7 @@ internal class Challenge1TargetSumKtTest{
     @Test
     fun `two number target sum found`(){
         val actual = twoNumberSum(array = inputArray, targetSum = targetSum)
+        expect(actual.size, "number of digits are not two"){ 2 }
         expect(actual.contains(expected[0]), "target sum has not been found"){ true }
         expect(actual.contains(expected[1]), "target sum has not been found"){ true }
     }
